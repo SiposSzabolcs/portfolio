@@ -1,0 +1,24 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar,
+.card,
+.footer {
+  background-color: #1f1f1f;
+  border-color: #333;
+}
+
+::placeholder {
+  color: white !important;
+  opacity: 1;
+}
+
+a {
+  color: #66ccff;
+}
+
+a:hover {
+  color: #00aced;
+}
