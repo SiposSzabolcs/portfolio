@@ -1,9 +1,99 @@
 <section id="about" class="py-5">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      I am a full-stack developer specializing in creating modern web
-      applications...
-    </p>
+  <h2 class="text-center mb-4">About Me</h2>
+  <div class="row justify-content-center">
+    <div class="col-sm-5 col-xl-4 mb-3 mb-sm-0">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title text-center" style="color: aliceblue">Past</h5>
+          <p class="card-text text-center">
+            Starting with Python, I’ve been passionate about programming since I
+            was a teenager. In recent years, I’ve specialized in web
+            development, where I’ve truly found my focus and enthusiasm.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5 col-xl-4 mb-3 mb-sm-0">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title text-center" style="color: aliceblue">
+            Present
+          </h5>
+          <p class="card-text text-center">
+            With the coding experience I’ve gained, I am now focused on turning
+            my passion into a full-time career, applying my skills to real-world
+            projects and challenges.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="d-flex align-items-start">
+        <div style="width: 125px; height: 70px" class="align-content-center">
+          <h5 class="me-3 text-center">Frontend</h5>
+        </div>
+        <ul class="list-unstyled d-flex flex-wrap">
+          <ng-container *ngFor="let tech of tech.frontend">
+            <li class="m-1">
+              <div
+                class="bg-white rounded-3 p-2"
+                style="width: 70px; height: 70px"
+              >
+                <img
+                  [src]="tech.icon"
+                  [alt]="tech.name"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                />
+              </div>
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+      <div class="d-flex align-items-start">
+        <div style="width: 125px; height: 70px" class="align-content-center">
+          <h5 class="me-3 text-center">Backend</h5>
+        </div>
+        <ul class="list-unstyled d-flex flex-wrap">
+          <ng-container *ngFor="let tech of tech.backend">
+            <li class="m-1">
+              <div
+                class="bg-white rounded-3 p-2"
+                style="width: 70px; height: 70px"
+              >
+                <img
+                  [src]="tech.icon"
+                  [alt]="tech.name"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                />
+              </div>
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+      <div class="d-flex align-items-start">
+        <div style="width: 120px; height: 70px" class="align-content-center">
+          <h5 class="me-3 text-center">Misc</h5>
+        </div>
+        <ul class="list-unstyled d-flex flex-wrap">
+          <ng-container *ngFor="let tech of tech.miscellaneous">
+            <li class="m-1">
+              <div
+                class="bg-white rounded-3 p-2"
+                style="width: 70px; height: 70px"
+              >
+                <img
+                  [src]="tech.icon"
+                  [alt]="tech.name"
+                  style="width: 100%; height: 100%; object-fit: contain"
+                />
+              </div>
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
